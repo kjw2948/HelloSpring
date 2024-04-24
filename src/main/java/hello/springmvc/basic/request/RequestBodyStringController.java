@@ -1,4 +1,4 @@
-package hello.springmvc.basic.requestmapping;
+package hello.springmvc.basic.request;
 
 import jakarta.servlet.Servlet;
 import jakarta.servlet.ServletInputStream;
@@ -54,7 +54,7 @@ public class RequestBodyStringController {
     }
 
 
-    // @RequestBody 사용 --> 실무에서 가장 많이 사용!
+    // @RequestBody 사용 --> 실무에서 엄청 많이 사용!
     @ResponseBody
     @PostMapping("/request-body-string-v4")
     public String requestBodyStringV4(@RequestBody String messageBody){
