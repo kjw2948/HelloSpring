@@ -73,7 +73,7 @@ public class RequestParamController {
 
 
     //요청 파라미터 -> ModelAttribute 사용
-    @ResponseBody
+    @ResponseBody // @ResponseBody --> String으로 return시에 해당 값을 응답 메시지바디에 넣어서 보냄
     @RequestMapping("/model-attribute-v2")
     public String modelAttributeV2(@ModelAttribute HelloData helloData) {
         log.info("username = {}, age = {}", helloData.getUsername(), helloData.getAge());
