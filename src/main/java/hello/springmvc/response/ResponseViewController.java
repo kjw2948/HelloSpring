@@ -21,13 +21,9 @@ public class ResponseViewController {
         return "response/hello";
     }
 
-    // view 논리적인 이름과 컨트롤러의 경로가 같으면 관례적으로 해당 view 불러줌 --> 권장 x
+    // view 논리적인 이름과 컨트롤러의 경로가 같으면 관례적으로 해당 view 불러줌
     @RequestMapping("/response/hello")
     public void responseViewV3(Model model) {
         model.addAttribute("data", "hello!");
     }
-
-
-
-
 }
